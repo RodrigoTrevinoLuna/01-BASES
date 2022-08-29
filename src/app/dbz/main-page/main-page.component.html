@@ -1,0 +1,19 @@
+<p>Dragon Ball</p>
+<hr>
+
+<div class="row">
+    <div class="col">
+        <app-personajes [personajes]="personajes"></app-personajes> <!-- Puede estar tambien Así Solo depende del nombre del Input del Componente Hijo -->
+        
+    </div>
+    <div class="col">
+        <app-agregar [nuevo]="nuevo" (onNuevoPersonaje)="agregarNuevoPersonaje($event)"></app-agregar>
+    </div>
+
+</div>
+
+<!-- [(ngModel)] Escucha y Emite el mensaje -->
+<!-- [value]="nuevo.nombre" -->
+<!-- (input)="cambiarNombre($event)" -->
+<!-- [] Establece una Propiedad al Objeto -->
+<!-- () Escucha un Evento -->
